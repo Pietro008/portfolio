@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pietro Filipe | Desenvolvedor Web</title>
+  <meta name="description" content="Portfólio de Pietro Filipe — Estudante de Engenharia de Software e Desenvolvedor Web" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- BOOT SEQUENCE -->
+  <div id="boot-screen">
+    <span id="boot-cursor" class="terminal-cursor"></span>
+    <span id="boot-text"></span>
+  </div>
+  <!-- BACKGROUND CANVAS -->
+  <canvas id="bg-canvas"></canvas>
+  <!-- SITE CONTENT (hidden until boot completes) -->
+  <div id="site-content" class="hidden">
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">Portifolio</a>
+        <div class="nav-links" id="nav-links">
+          <a href="#sobre">SOBRE</a>
+          <a href="#tecnologias">TECH</a>
+          <a href="#projetos">PROJETOS</a>
+          <a href="#contato">CONTATO</a>
+        </div>
+        <button class="nav-toggle" id="nav-toggle">[MENU]</button>
+      </div>
+      <div class="nav-mobile hidden" id="nav-mobile">
+        <a href="#sobre">SOBRE</a>
+        <a href="#tecnologias">TECH</a>
+        <a href="#projetos">PROJETOS</a>
+        <a href="#contato">CONTATO</a>
+      </div>
+    </nav>
+    <!-- HERO -->
+    <section id="hero" class="section">
+      <div class="container">
+        <div class="grid hero-grid">
+          <div class="glass-panel module-border p-6 fade-element" id="status-module">
+            <div class="status-dot-row">
+              <span class="status-dot"></span>
+              <span class="label-xs">Sistema Online</span>
+            </div>
+            <div class="data-lines">
+              <p>STATUS: <span class="text-primary">ATIVO</span></p>
+              <p>LOCALIZAÇÃO: BRASIL</p>
+              <p>VERSÃO: 1.0.0</p>
+            </div>
+          </div>
+          <div class="glass-panel module-border p-8 hero-main fade-element">
+            <p class="label-xs comment">identificação do operador</p>
+            <h1 class="hero-title">Pietro<br /><span class="text-primary glow-text">Filipe</span></h1>
+            <p class="hero-subtitle">Estudante de Engenharia de Software | Desenvolvedor Web</p>
+            <div class="hero-buttons">
+              <a href="#projetos" class="btn-terminal">Ver Projetos</a>
+              <a href="#contato" class="btn-terminal">Contato</a>
+            </div>
+          </div>
+          <div class="glass-panel module-border p-4 hero-metrics fade-element">
+            <div class="metric">
+              <p class="metric-value glow-text">05</p>
+              <p class="label-xs">Tecnologias</p>
+            </div>
+            <div class="metric">
+              <p class="metric-value glow-text">01+</p>
+              <p class="label-xs">Projetos</p>
+            </div>
+            <div class="metric">
+              <p class="metric-value glow-text">∞</p>
+              <p class="label-xs">Commits</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <p class="label-xs comment fade-element">módulo 1</p>
+        <h2 class="section-title fade-element">Sobre <span class="text-primary glow-text">Mim</span></h2>
+        <div class="grid about-grid">
+          <div class="glass-panel module-border p-8 scan-line fade-element">
+            <p class="body-text">
+              Sou estudante de Engenharia de Software apaixonado por tecnologia e desenvolvimento web.
+              Atualmente estudo e desenvolvo projetos utilizando HTML, CSS e JavaScript para aprimorar
+              minhas habilidades e criar interfaces modernas e funcionais.
+            </p>
+            <p class="body-text muted mt-4">
+             Busco uma oportunidade de estágio ou jovem aprendiz na área de programação para desenvolver minhas habilidades, adquirir experiência prática e crescer na área de tecnologia.
+            </p>
+          </div>
+          <div class="glass-panel module-border p-8 fade-element">
+            <div class="data-table">
+              <div class="data-row"><span class="muted">NOME</span><span class="text-primary">Pietro Filipe</span></div>
+              <div class="data-row"><span class="muted">FORMAÇÃO</span><span class="text-primary">Eng. de Software</span></div>
+              <div class="data-row"><span class="muted">FOCO</span><span class="text-primary">Desenvolvimento Web</span></div>
+              <div class="data-row"><span class="muted">STACK</span><span class="text-primary">HTML / CSS / JS</span></div>
+              <div class="data-row"><span class="muted">STATUS</span><span class="text-primary">Aprendendo</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TECNOLOGIAS -->
+    <section id="tecnologias" class="section">
+      <div class="container">
+        <p class="label-xs comment fade-element"> módulo 2</p>
+        <h2 class="section-title fade-element">Nós de <span class="text-primary glow-text">Sistema</span></h2>
+        <div class="tech-grid">
+          <div class="glass-panel module-border p-6 tech-card fade-element">
+            <div class="tech-header"><span class="node-tag">HTML</span><span class="tech-status">[ATIVO]</span></div>
+            <p class="tech-desc">Estrutura semântica</p>
+            <div class="tech-line"></div>
+          </div>
+          <div class="glass-panel module-border p-6 tech-card fade-element">
+            <div class="tech-header"><span class="node-tag">CSS</span><span class="tech-status">[ATIVO]</span></div>
+            <p class="tech-desc">Estilização avançada</p>
+            <div class="tech-line"></div>
+          </div>
+          <div class="glass-panel module-border p-6 tech-card fade-element">
+            <div class="tech-header"><span class="node-tag">JavaScript</span><span class="tech-status">[ATIVO]</span></div>
+            <p class="tech-desc">Lógica e interatividade</p>
+            <div class="tech-line"></div>
+          </div>
+          <div class="glass-panel module-border p-6 tech-card fade-element">
+            <div class="tech-header"><span class="node-tag">Git</span><span class="tech-status">[ATIVO]</span></div>
+            <p class="tech-desc">Controle de versão</p>
+            <div class="tech-line"></div>
+          </div>
+          <div class="glass-panel module-border p-6 tech-card fade-element">
+            <div class="tech-header"><span class="node-tag">GitHub</span><span class="tech-status">[ATIVO]</span></div>
+            <p class="tech-desc">Colaboração e deploy</p>
+            <div class="tech-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <p class="label-xs comment fade-element">módulo 3</p>
+        <h2 class="section-title fade-element">Banco de <span class="text-primary glow-text">Projetos</span></h2>
+        <div class="glass-panel module-border p-8 project-card fade-element">
+          <div class="status-dot-row">
+            <span class="status-dot"></span>
+            <span class="label-xs">Projeto Principal</span>
+          </div>
+          <h3 class="project-title">Portfólio Pessoal</h3>
+          <p class="body-text muted">
+            Portfólio pessoal desenvolvido para apresentar meus projetos e habilidades como
+            desenvolvedor. Design futurista com tema de inteligência artificial, utilizando
+            animações avançadas e efeitos visuais modernos.
+          </p>
+          <div class="tag-row">
+            <span class="node-tag">HTML</span>
+            <span class="node-tag">CSS</span>
+            <span class="node-tag">JavaScript</span>
+        </div>
+        <div class="dashed-box fade-element">
+          <p class="label-xs"> Novos projetos em desenvolvimento...</p>
+        </div>
+      </div>
+    </section>
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="container">
+        <p class="label-xs comment fade-element">módulo 4</p>
+        <h2 class="section-title fade-element">Canal de <span class="text-primary glow-text">Contato</span></h2>
+        <div class="grid about-grid">
+          <div class="glass-panel module-border p-8 fade-element">
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="label-xs">NOME</label>
+                <input type="text" placeholder="Insira seu nome" />
+              </div>
+              <div class="form-group">
+                <label class="label-xs">EMAIL</label>
+                <input type="email" placeholder="Insira seu email" />
+              </div>
+              <div class="form-group">
+                <label class="label-xs">MENSAGEM</label>
+                <textarea rows="4" placeholder="Escreva sua mensagem"></textarea>
+              </div>
+              <button type="submit" class="btn-terminal">Transmitir Mensagem</button>
+            </form>
+          </div>
+          <div class="glass-panel module-border p-8 fade-element">
+            <div class="contact-info">
+              <div class="contact-item">
+                <p class="muted">GITHUB</p>
+                <a><href>https://github.com/Pietro008</a>
+              </div>
+              <div class="contact-item">
+                <p class="muted">EMAIL</p>
+                <p class="text-primary">Pietrofilipepilar@gmail.com</p>
+              </div>
+              <div class="contact-item">
+                <p class="muted">LOCALIZAÇÃO</p>
+                <p>Curitiba, Paraná</p>
+              </div>
+              <div class="contact-note">
+                <p class="muted">Disponível para estágio ou jovem aprendiz na área de programação e tecnologia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer id="footer">
+         <div class="container footer-inner">
+        <p class="label-xs">© 2025 <span class="text-primary">PIETRO FILIPE</span> — TODOS OS DIREITOS RESERVADOS</p>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
